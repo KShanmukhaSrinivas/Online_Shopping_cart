@@ -4,6 +4,7 @@ app.config['SECRET_KEY'] = "RWFSEGSRGTJNDSFABGE"
 @app.route('/success/<name>')
 //changed
 //second
+//first
 def success(name):
    return f'<h1>welcome {name}</h1>'
 
