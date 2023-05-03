@@ -3,6 +3,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "RWFSEGSRGTJNDSFABGE"
 @app.route('/success/<name>')
 //changed
+//second
 def success(name):
    return f'<h1>welcome {name}</h1>'
 
