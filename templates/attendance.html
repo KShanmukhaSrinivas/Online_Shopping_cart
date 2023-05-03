@@ -43,29 +43,29 @@
         </style>
     </head>
     <body>
-        <form action="/attendance" method="post"></form>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>roll.no</th>
-                
-                <th>Absent</th>
-            </tr>
-            <tr>
-                <td>Ravi</td>
-                <td>1</td>
-                
-                <td><input type="button" value="0" name ="Absent" onclick="abs()" style="color: red;"></td>
-            </tr>
-            <tr>
-                <td>Raju</td>
-                <td>2</td>
-                
-                <td><input type="button"  style="color: red;"></td>
-            </tr>
-        </table>
-        <input type="text">
-        <input type="submit" value="Submit">
-    </form>
+        <form action="/attendance" method="post">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>roll.no</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>1</td>
+                    <td><input type="button" value="1" style="color: green;"></td>
+                    <td><input type="button" value="1" name="attendance" style="color: red;"></td>
+                </tr>
+                <tr>
+                    <td>Raju</td>
+                    <td>2</td>
+                    <td><input type="button" value="1" style="color: green;"></td>
+                    <td><input type="button" value="1" name="attendance" style="color: red;"></td>
+                </tr>
+            </table>
+            <input type="text" id="name" name="name">
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
