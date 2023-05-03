@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            input[type="button"] {
+                padding: 6px 12px;
+                border-radius: 4px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+                margin-right: 4px;
+            }
+            input[type="button"][style="color: green;"] {
+                background-color: lightgreen;
+            }
+            input[type="button"][style="color: red;"] {
+                background-color: salmon;
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #3e8e41;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="/attendance" method="post"></form>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>roll.no</th>
+                
+                <th>Absent</th>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>1</td>
+                
+                <td><input type="button" value="0" name ="Absent" onclick="abs()" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td>Raju</td>
+                <td>2</td>
+                
+                <td><input type="button"  style="color: red;"></td>
+            </tr>
+        </table>
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form>
+    </body>
+</html>
